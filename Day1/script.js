@@ -10,9 +10,8 @@ const data = input.split("\n").map((line) => {
 });
 
 data.forEach((line) => {
-
-        left.push(line[0]);
-        right.push(line[1]);
+    left.push(line[0]);
+    right.push(line[1]);
 });
 
 left.sort((a, b) => a - b);
@@ -22,11 +21,11 @@ let total = 0;
 
 for (let i = 0; i < left.length; i++) {
     let difference;
-   if(left[i] > right[i]) {
-       difference = left[i] - right[i];
-   } else {
-       difference = right[i] - left[i];
-   }
+    if(left[i] > right[i]) {
+        difference = left[i] - right[i];
+    } else {
+        difference = right[i] - left[i];
+    }
 
     total += difference;
 }
