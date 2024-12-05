@@ -7,6 +7,8 @@ const input = FS.readFileSync("./input.txt", "utf-8").trim().split('\n').join(''
 // get list of instructions from input includeing do() and don't()
 const listOfInstructions = input.match(/mul\((\d+),(\d+)\)|do\(\)|don't\(\)/g);
 
+// console.log(listOfInstructions)
+
 // check if comand is valid
 const checkValid = (input) => {
 
